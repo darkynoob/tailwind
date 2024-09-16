@@ -52,19 +52,19 @@
             </svg>
           </a>
           <div class="space-x-8 ml-8 hidden md:flex">
-            <a class="px-3 py-2 text-sky-500" href="/">Home</a>
+            <a
+              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors dark:text-slate-400 dark:hover:text-sky-500"
+              href="/"
+              >Home</a
+            >
             <a
               class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors dark:text-slate-400 dark:hover:text-sky-500"
               href="/about"
               >About</a
             >
+            <a class="px-3 py-2 text-sky-500" href="/blog">Blog</a>
             <a
               class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors dark:text-slate-400 dark:hover:text-sky-500"
-              href="/blog"
-              >Blog</a
-            >
-            <a
-              class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors dark:text-slate-400 dark:hover:text-sky-500 dark:focus:ring-slate-700 focus:ring-offset-transparent"
               href="/contact"
               >Contact</a
             >
@@ -73,7 +73,6 @@
         <div class="flex">
           <!-- Sol -->
           <button
-            id="toggle-dark-mode"
             class="text-slate-500 hover:text-sky-500 rounded-full -ml-1 transition-colors focus:ring-2 focus:ring-slate-200 focus:ring-offset-1 dark:text-slate-400 dark:hover:text-sky-500 dark:focus:ring-slate-800"
           >
             <svg
@@ -106,7 +105,9 @@
         </div>
       </div>
       <div class="space-y-1 pb-3 border-t dark:border-slate-400 pt-2 md:hidden">
-        <a class="block rounded-md px-3 py-2 bg-sky-500 text-white" href="/"
+        <a
+          class="block rounded-md px-3 py-2 text-slate-700 transition-colors hover:bg-sky-500 hover:text-white dark:text-slate-400 dark:hover:text-white"
+          href="/"
           >Home</a
         >
         <a
@@ -114,9 +115,7 @@
           href="/about"
           >About</a
         >
-        <a
-          class="block rounded-md px-3 py-2 text-slate-700 transition-colors hover:bg-sky-500 hover:text-white dark:text-slate-400 dark:hover:text-white"
-          href="/blog"
+        <a class="block rounded-md px-3 py-2 bg-sky-500 text-white" href="/blog"
           >Blog</a
         >
         <a
@@ -127,6 +126,11 @@
       </div>
     </header>
     <main class="p-4 flex-1">
+      <h1
+        class="text-5xl font-serif font-extrabold text-sky-600 text-center mt-4 mb-8"
+      >
+        Blog
+      </h1>
       <div
         class="max-w-6xl mx-auto mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3"
       >
@@ -393,6 +397,103 @@
           </div>
         </article>
       </div>
+      <nav
+        class="flex justify-between text-sm text-slate-500 max-w-6xl mx-auto mt-4 dark:text-slate-400"
+      >
+        <a
+          class="rounded bg-white py-2 px-3 shadow hover:shadow-md active:shadow-sm duration-100 flex items-center dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+          href=""
+        >
+          <svg
+            class="w-5 mr-2"
+            data-slot="icon"
+            aria-hidden="true"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          Anterior
+        </a>
+        <div class="hidden md:flex">
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow rounded-l dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+            >1</a
+          >
+          <a href="" class="py-2 px-4">2</a>
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+            >3</a
+          >
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow dark:bg-slate-900"
+          >
+            <svg
+              class="w-6"
+              data-slot="icon"
+              aria-hidden="true"
+              fill="none"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+            >4</a
+          >
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+            >5</a
+          >
+          <a
+            href=""
+            class="bg-white py-2 px-4 hover:shadow-md active:shadow-sm duration-200 shadow rounded-r dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+            >6</a
+          >
+        </div>
+        <a
+          class="rounded bg-white py-2 px-3 shadow hover:shadow-md active:shadow-sm duration-100 flex items-center dark:bg-slate-900 dark:hover:bg-slate-800 dark:active:bg-slate-900"
+          href=""
+        >
+          Siguiente
+          <svg
+            class="w-5 ml-2"
+            data-slot="icon"
+            aria-hidden="true"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+      </nav>
     </main>
     <footer class="py-10">
       <div
@@ -470,6 +571,5 @@
         </div>
       </div>
     </footer>
-    <script src="/main.js"></script>
   </body>
 </html>

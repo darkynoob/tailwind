@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  darkMode: "class", // or 'media' or 'class'
+  content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        slate: { 950: "#0b101d" },
+      },
+    },
   },
-  plugins: [],
-}
-
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+};
